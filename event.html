@@ -1,161 +1,193 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Pilger, NE - Learn More</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<script src="https://cdnres.willyweather.com/widget/warning/loadView.html?id=156969" type="application/javascript"></script>
-	</head>
-	<body class="is-preload">
+<head>
+    <title> Community Center - Pilger, NE</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        /* --- Styled Date Input --- */
+        input[type="date"] {
+            background-color: rgba(255, 255, 255, 0.05);
+            color: #fff;
+            border: none; 
+            border-radius: 0.1em;
+            padding: 0.75em;
+            width: 100%;
+        }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        input[type="date"]:focus {
+            outline: none;
+            border-color: #3f8efc;
+            box-shadow: 0 0 0 2px rgba(63, 142, 252, 0.3);
+        }
 
-				<!-- Header -->
-				<!-- Note: The "styleN" class below should match that of the banner element. -->
-					<header id="header" class="alt style2">
-						<a href="index.html" class="logo"><strong>PILGER</strong> <span>NEBRASKA</span></a>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            filter: invert(1);
+        }
+
+        /* --- Styled Booked List Sidebar --- */
+        #bookedList {
+            background: none;
+            border: 1px solid #333;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            color: #fff;
+        }
+
+        #bookedList p {
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-bottom: 0.8rem;
+            border-left: 4px solid #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        #bookedList p strong {
+            color: #ffffff;
+        }
+
+        #bookedList p em {
+            color: #bbbbbb;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header" class="alt">
+            <a href="index.html" class="logo"><strong>PILGER</strong> <span>NEBRASKA</span></a>
+            <nav>
+                <a href="#menu">Menu</a>
+            </nav>
+        </header>
 
 				<!-- Menu -->
-					<nav id="menu">
-						<ul class="links">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="event.html">Events</a></li>
-							<li><a href="weather.html">Weather & Road</a></li>
-							<li><a href="agency.html">Agencies & Businesses</a></li>
-						</ul>
-						<ul class="actions stacked">
-							<li><a href="#" class="button primary fit">Learn More</a></li>
-							<li><a href="#" class="button fit">Pay Bills</a></li>
-						</ul>
-					</nav>
+				<nav id="menu">
+					<ul class="links">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="weather.html">Weather & Road</a></li>
+						<li><a href="agency.html">Agencies & Businesses</a></li>
+						<li><a href="event.html">Community Center Reservation</a></li>
+					</ul>
+					<ul class="actions stacked">
+						<li><a href="#" class="button primary fit">Learn More</a></li>
+						<li><a href="#" class="button fit">Pay Bills</a></li>
+					</ul>
+				</nav>
 
-				<!-- Weather Banner -->
-				<div style="max-width: 1000px; width: 100%; margin: 0 auto; text-align: center;">
-					<iframe style="width: 100%; height: 520px; border: none; display: block;" 
-						src="https://cdnres.willyweather.com/widget/loadView.html?id=156968" 
-						frameborder="0" scrolling="no">
-					</iframe>
-					<a style="height: 20px; position: relative; z-index: 1; text-indent: -9999em; display: block; margin: -20px 0 0 0;" 
-						href="https://www.willyweather.com/ne/stanton-county/pilger.html" rel="nofollow">
-						https://www.willyweather.com/ne/stanton-county/pilger.html
-					</a>
-				</div>
-				
-				
-				<!---Weather Condition Around Pilger-->
-				<div style="max-width: 1000px; width: 100%; margin: 0 auto; text-align: center;">
-					<iframe style="width: 100%; height: 520px; border: none; display: block;" 
-						src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=default&metricTemp=default&metricWind=default&zoom=5&overlay=wind&product=ecmwf&level=surface&lat=39.232&lon=-97.031&detailLat=42.232&detailLon=-97.013&detail=true&pressure=true&message=true" 
-						frameborder="0">
-					</iframe>
-				</div>
-				
+        <!-- Main -->
+        <div id="main" class="inner" style="display: flex; flex-wrap: wrap; gap: 2rem; padding: 2rem;">
 
-				<!--Webcams-->
-				<div style="max-width: 1000px; width: 100%; margin: 0 auto; text-align: center;">
-					<a name="windy-webcam-timelapse-player" 
-						data-id="1637847249" 
-						data-play="day" 
-						data-loop="0" 
-						data-auto-play="0" 
-						data-force-full-screen-on-overlay-play="0" 
-						data-interactive="1" 
-						href="https://windy.com/webcams/1637847249" 
-						target="_blank">
-						Pilger › East: US 275: E of - 275 looking east
-					</a>
-					<script async type="text/javascript" src="https://webcams.windy.com/webcams/public/embed/v2/script/player.js"></script>
-				</div>
-				<div style="max-width: 1000px; width: 100%; margin: 0 auto; text-align: center;">
-					<a name="windy-webcam-nearby-embed" data-params='{"lat":42.01858,"lon":-97.02348}'></a>
-					<script async type="text/javascript" src="https://webcams.windy.com/webcams/public/embed/v2/script/nearby.js"></script>
-				</div>
-				
-				<!-- Contact -->
-					<section id="contact">
-						<div class="inner">
-							<section>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="6"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Clear" /></li>
-									</ul>
-								</form>
-							</section>
-							<section class="split">
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-envelope"></span>
-										<h3>Email</h3>
-										<a href="#">info@pilgerne.gov</a>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-phone"></span>
-										<h3>Phone</h3>
-										<span>(402) 396-3563</span>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-home"></span>
-										<h3>Address</h3>
-										<span>220 N Main St<br />
-											Pilger, NE 68768<br />
-										United States of America</span>
-									</div>
-								</section>
-							</section>
-						</div>
-					</section>
+            <!-- Sidebar for Booked Dates -->
+            <section style="flex: 1; min-width: 280px; max-width: 350px;">
+                <header class="major">
+                    <h2>Booked Dates</h2>
+                </header>
+                <div id="bookedList">
+                    <p id="emptyMessage">No bookings yet.</p>
+                </div>
+            </section>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<!-- <ul class="icons">
-								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							</ul> -->
-							<ul class="copyright">
-								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</footer>
+            <!-- Reservation Form -->
+            <section style="flex: 2; min-width: 300px;">
+                <header class="major">
+                    <h2>Reserve the Community Center</h2>
+                </header>
+                <form id="reservationForm">
+                    <div class="fields">
+                        <div class="field">
+                            <label for="name">Your Name or Agency</label>
+                            <input type="text" id="name" name="name" required />
+                        </div>
+                        <div class="field">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required />
+                        </div>
+                        <div class="field">
+                            <label for="date">Requested Date</label>
+                            <input type="date" id="date" name="date" required />
+                        </div>
+                        <div class="field">
+                            <label for="section">Select Area</label>
+                            <select id="section" name="section" required>
+                                <option value="">-- Please choose --</option>
+                                <option value="Hall">Hall</option>
+                                <option value="Conference Room">Conference Room</option>
+                                <option value="Dining Area">Dining Area</option>
+                                <option value="Recreational Center">Recreational Center</option>
+                                <option value="Entire Facility">Entire Facility</option>
+                            </select>
+                        </div>
+                    </div>
+                    <ul class="actions">
+                        <li><input type="submit" value="Submit Reservation" class="primary" /></li>
+                    </ul>
+                </form>
+            </section>
 
-			</div>
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        </div>
 
-	</body>
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <ul class="copyright">
+                    <li>&copy; Pilger, Nebraska</li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Inline JavaScript for Booking -->
+    <script>
+        const form = document.getElementById('reservationForm');
+        const bookedList = document.getElementById('bookedList');
+        const emptyMessage = document.getElementById('emptyMessage');
+        const bookedDates = [];
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const date = document.getElementById('date').value;
+            const section = document.getElementById('section').value;
+
+            const bookingKey = `${date}-${section}`;
+
+            if (bookedDates.includes(bookingKey)) {
+                alert("This date and section are already booked. Please choose a different option.");
+                return;
+            }
+
+            bookedDates.push(bookingKey);
+
+            // Remove "No bookings" message
+            if (emptyMessage) {
+                emptyMessage.remove();
+            }
+
+            const entry = document.createElement('p');
+            entry.innerHTML = `<strong>${date}</strong>: ${section} – <em>Reserved by ${name}</em>`;
+            bookedList.appendChild(entry);
+
+            form.reset();
+        });
+    </script>
+</body>
 </html>
